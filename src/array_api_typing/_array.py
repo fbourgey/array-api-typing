@@ -14,8 +14,6 @@ DTypeT_co = TypeVar("DTypeT_co", covariant=True)
 class HasArrayNamespace(Protocol[NamespaceT_co]):
     """Protocol for classes that have an `__array_namespace__` method.
 
-    See the Array API specification: https://data-apis.org/array-api/latest/
-
     This `Protocol` is intended for use in static typing to ensure that an
     object has an `__array_namespace__` method that returns a namespace for
     array operations. This `Protocol` should not be used at runtime for type
